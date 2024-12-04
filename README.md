@@ -1,4 +1,4 @@
-#Welcome House 2 English patch
+# Welcome House 2 English patch
 
 This includes all the necessary code to patch the game and translate it to English.
 Patcher script is Linux only, but it should be easy to replicate the same steps in a .bat in Windows.
