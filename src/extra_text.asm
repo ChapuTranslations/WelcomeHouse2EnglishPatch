@@ -3,44 +3,37 @@
 .sjisn "x2  "
 
 ; 728
-.org 0x800a4f48
-.sjisn " 1"
-
-; 729
-.org 0x800a4f4c
-.sjisn " 2"
-
-; 730
-.org 0x800a4f50
-.sjisn " 3"
-
-; 731
-.org 0x800a4f54
-.sjisn "-"
-.db 0x00
-
-; 732
 .org 0x800A4DF0
 .sjisn "Undgrd."
 .db 0x00
 
-; 733
+; 729
 .org 0x800A4DFC
 .sjisn "3F"
 .db 0x00
 
-; 734
+; 730
 .org 0x800A4E00
 .sjisn "2F"
 .db 0x00
 
-; 735
+; 731
 .org 0x800A4E08
 .sjisn "1F"
 .db 0x00
 
-; 736
+; 732
 .org 0x8008BC6C
-.area 36, 0x00
-.sjisn "Welcome House 2 file  : "
+.area 44, 0x00
+.dw 0x85827682
+.dw 0x83828c82
+.dw 0x8d828f82
+.dw 0x40818582
+.dw 0x8f826782
+.dw 0x93829582
+.dw 0x40818582
+.dw 0x40815182
+.dw 0x89828682
+.dw 0x85828c82
+.dw 0x40814081
 .endarea

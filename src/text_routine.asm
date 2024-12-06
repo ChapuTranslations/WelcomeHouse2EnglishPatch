@@ -43,47 +43,19 @@ li		a2, 0x0
 .org 0x80047338
 li		a2, 0x07
 
-; hardcoded byte length of "Undgrd." location name in memcard save text, originally 4
-.org 0x8004a128
-li		a2, 0x07
-
-; hardcoded byte length of hyphen, originally 2
-.org 0x8004a140
-li		a2, 0x01
-
-; memcard save text is a mess
-; format is file#: floor#-room name
-; these pos are hardcoded
-
 ; hardcoded addr for file# in memcard text
 .org 0x80049d34
-la		a0, 0x8008BC80
+la		a0, 0x8008BC96
 
 .org 0x80049d4c
-la		a0, 0x8008BC80
+la		a0, 0x8008BC96
 
 .org 0x80049d64
-la		a0, 0x8008BC80
+la		a0, 0x8008BC96
 
-; hardcoded addr for floor# pos in memcard text
-.org 0x8004a110
-la		a0, 0x8008bc84
-
-; hardcoded addr for hyphen pos in memcard text
-.org 0x8004a12c
-la		a0, 0x8008bc84
-
-; call strncat for hyphen instead of strncpy
-.org 0x8004a13c
-jal		0x800546d8
-
-; hardcoded addr for room name pos in memcard text
-.org 0x8004a160
-la		a0, 0x8008bc84
-
-; call strncat for room name instead of strncpy
-.org 0x8004a174
-jal		0x800546d8
+; skip function to write floor and room in save state text
+.org 0x80049f08
+nop
 
 ; Dead function at this adress, just about the right size for the whole font map
 .org 0x80053960

@@ -1,4 +1,4 @@
-# Welcome House 2 English patch
+# Welcome House 2 PSX English patch
 
 This includes all the necessary code to patch the game and translate it to English.
 Patcher script is Linux only, but it should be easy to replicate the same steps in a .bat in Windows.
@@ -16,9 +16,13 @@ Patcher script is Linux only, but it should be easy to replicate the same steps 
 
 Simply give run permissions to patcher.py and execute. If everything's in order, it'll patch track 1.bin of the game and you'll be able to play it in English.
 
+## Changelog
+###	v1.1:
+*	Fixed text description in save files. Turns out PSX's BIOS only support Shift-JIS text in there, max 32 chars (moral: always RTFM). No way to fit the floor and location, so now it only shows file number. Bummer.
+*	Minor script fixes for spacing and wording.
+
 ##	To-do:
 *	Make highlighted text count half-width chars instead of full-width ones (currently avoiding this issue with creative text formatting).
-*	Figure out why the text description for the save files is effed up in the PSX's internal memory card manager (but not in emulators), and fix it.
 
 ##	Other considerations:
 
